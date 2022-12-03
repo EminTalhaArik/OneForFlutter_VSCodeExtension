@@ -1,0 +1,7 @@
+TextButton(
+  style: ButtonStyle(
+    foregroundColor: MaterialStateProperty.all<Color>(Colors.blue),
+  ),
+  onPressed: () { },
+  child: Text('TextButton'),
+),

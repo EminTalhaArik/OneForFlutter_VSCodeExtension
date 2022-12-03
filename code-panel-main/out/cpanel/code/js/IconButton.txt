@@ -1,0 +1,8 @@
+IconButton(
+              icon: Icon(Icons.play_arrow),
+              color: Colors.pinkAccent,
+              onPressed: (){
+                debugPrint("Butona tıklandı");
+              },
+              iconSize: 24,
+            ),

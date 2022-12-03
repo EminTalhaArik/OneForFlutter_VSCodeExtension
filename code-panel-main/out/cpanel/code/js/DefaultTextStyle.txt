@@ -1,0 +1,21 @@
+ DefaultTextStyle(
+              style: TextStyle(fontSize: 36, color: Colors.blue),
+              child: Center(
+                child: Column(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: [
+                    const Text(
+                      'The first text',
+                    ),
+                    const Text(
+                      'The second text',
+                      style: TextStyle(fontSize: 24),
+                    ),
+                    const Text(
+                      'The third text',
+                      style: TextStyle(color: Colors.red),
+                    ),
+                  ],
+                ),
+              ),
+            ),

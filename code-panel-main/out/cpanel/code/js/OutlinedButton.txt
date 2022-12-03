@@ -1,0 +1,10 @@
+OutlinedButton(
+  style: OutlinedButton.styleFrom(
+    backgroundColor: Colors.black, //<-- SEE HERE
+  ),
+  onPressed: () {},
+  child: const Text(
+    'Outlined Button',
+    style: TextStyle(fontSize: 40),
+  ),
+),

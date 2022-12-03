@@ -46,31 +46,31 @@ class CodePanelViewProvider {
                 case 'jsIF':
                     active.edit(editBuilder => {
                         const code = new cpanel.Code(this._extensionUri);
-                        editBuilder.replace(selection, code.js('FlatButton'));
+                        editBuilder.replace(selection, code.js('TextButton'));
                     });
                     break;
                 case 'jsSwitch':
                     active.edit(editBuilder => {
                         const code = new cpanel.Code(this._extensionUri);
-                        editBuilder.replace(selection, code.js('RaisedButton'));
+                        editBuilder.replace(selection, code.js('ElevatedButton'));
                     });
                     break;
                 case 'jsFor':
                     active.edit(editBuilder => {
                         const code = new cpanel.Code(this._extensionUri);
-                        editBuilder.replace(selection, code.js('FloatingActionButton'));
+                        editBuilder.replace(selection, code.js('OutlinedButton'));
                     });
                     break;
                 case 'jsWhile':
                     active.edit(editBuilder => {
                         const code = new cpanel.Code(this._extensionUri);
-                        editBuilder.replace(selection, code.js('while'));
+                        editBuilder.replace(selection, code.js('FloatingActionButton'));
                     });
                     break;
                 case 'jsDoWhile':
                     active.edit(editBuilder => {
                         const code = new cpanel.Code(this._extensionUri);
-                        editBuilder.replace(selection, code.js('dowhile'));
+                        editBuilder.replace(selection, code.js('IconButton'));
                     });
                     break;
                 case 'jsFunction':
@@ -94,19 +94,19 @@ class CodePanelViewProvider {
                 case 'jsGet':
                     active.edit(editBuilder => {
                         const code = new cpanel.Code(this._extensionUri);
-                        editBuilder.replace(selection, code.js('get'));
+                        editBuilder.replace(selection, code.js('DefaultTextStyle'));
                     });
                     break;
                 case 'jsPost':
                     active.edit(editBuilder => {
                         const code = new cpanel.Code(this._extensionUri);
-                        editBuilder.replace(selection, code.js('post'));
+                        editBuilder.replace(selection, code.js('RichText'));
                     });
                     break;
                 case 'jsJson':
                     active.edit(editBuilder => {
                         const code = new cpanel.Code(this._extensionUri);
-                        editBuilder.replace(selection, code.js('json'));
+                        editBuilder.replace(selection, code.js('Text'));
                     });
                     break;
                 case 'jsTry':
@@ -118,7 +118,7 @@ class CodePanelViewProvider {
                 case 'jsHello':
                     active.edit(editBuilder => {
                         const code = new cpanel.Code(this._extensionUri);
-                        editBuilder.replace(selection, code.js('hello'));
+                        editBuilder.replace(selection, code.js('TextField'));
                     });
                     break;
                 // PHP
@@ -360,13 +360,11 @@ function getCodePanelBody() {
             <div class="panel-body">
                 <div class="row">
                     <div class="col-12 col-xs-12 col-md-12">
-                        <a href="#" class="btn btn-secondary btn-sm m-1" role="button" data-act="jsIF"><span class="panel-title">Flat Button</span></a>
-                        <a href="#" class="btn btn-secondary btn-sm m-1" role="button" data-act="jsSwitch"><span class="panel-title">Raised Button</span></a>
-                        <a href="#" class="btn btn-secondary btn-sm m-1" role="button" data-act="jsFor"><span class="panel-title">Floating Button</span></a>
-                        <a href="#" class="btn btn-secondary btn-sm m-1" role="button" data-act="jsWhile"><span class="panel-title">Drop Down Button</span></a>
+                        <a href="#" class="btn btn-secondary btn-sm m-1" role="button" data-act="jsIF"><span class="panel-title">Text Button</span></a>
+                        <a href="#" class="btn btn-secondary btn-sm m-1" role="button" data-act="jsSwitch"><span class="panel-title">Elevated Button</span></a>
+                        <a href="#" class="btn btn-secondary btn-sm m-1" role="button" data-act="jsFor"><span class="panel-title">Outlined Button</span></a>
+                        <a href="#" class="btn btn-secondary btn-sm m-1" role="button" data-act="jsWhile"><span class="panel-title">Floating Action Button</span></a>
                         <a href="#" class="btn btn-secondary btn-sm m-1" role="button" data-act="jsDoWhile"><span class="panel-title">Icon Button</span></a>
-                        <a href="#" class="btn btn-secondary btn-sm m-1" role="button" data-act="jsFunction"><span class="panel-title">Inkwell Button</span></a>
-                        <a href="#" class="btn btn-secondary btn-sm m-1" role="button" data-act="jsAsyncFunction"><span class="panel-title">Outline Button</span></a>
                     </div>
                 </div>
             </div>

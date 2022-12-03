@@ -1,6 +1,0 @@
- RaisedButton(
-          onPressed: _fonlsiyonadi, // bir fonksiyon tetikler
-          textColor: Colors.white, // Yazı rengi
-          padding: const EdgeInsets.all(0.0), // içten boşluk
-          child: Text('BUTTON'), // Buton üzerindeki yazıyı belirler
-        ), 

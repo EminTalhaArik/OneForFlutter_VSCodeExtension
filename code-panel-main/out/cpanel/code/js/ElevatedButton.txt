@@ -1,0 +1,8 @@
+ElevatedButton(
+  style: ElevatedButton.styleFrom(
+    primary: Colors.red, // background
+    onPrimary: Colors.white, // foreground
+  ),
+  onPressed: () { },
+  child: Text('ElevatedButton with custom foreground/background'),
+),

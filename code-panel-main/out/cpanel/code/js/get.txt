@@ -1,0 +1,14 @@
+const url = 'https://example.com/get.php';
+
+fetch(url).then((response) => {
+    if (response.ok) {
+        return response.text();
+    }
+    throw new Error();
+}).then((data) => {
+    if (json.status == 1) {
+        console.log(json);
+    }
+}).catch((error) => {
+    throw new Error();
+});

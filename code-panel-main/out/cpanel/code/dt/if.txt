@@ -1,0 +1,9 @@
+var n = 5;
+
+if (n == 3) {
+    print(n);
+} else if(n == 1) {
+    print(n);
+} else {
+    print(n);
+}

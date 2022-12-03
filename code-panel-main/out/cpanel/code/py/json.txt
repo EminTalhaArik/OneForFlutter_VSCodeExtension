@@ -1,0 +1,8 @@
+import requests
+import json
+
+url = 'http://localhost/test/data.php'
+ary = {'foo': 'bar'}
+
+response = requests.post(url)
+print(response.json()[0]['value'])

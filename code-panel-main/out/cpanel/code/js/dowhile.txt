@@ -1,0 +1,9 @@
+let n = '';
+let i = 0;
+
+do {
+  i = i + 1; 
+  n = n + i;
+} while (i < 5);
+
+console.log(n);

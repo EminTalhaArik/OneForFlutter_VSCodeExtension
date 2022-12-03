@@ -1,0 +1,20 @@
+const url = 'https://example.com/post.php';
+
+const data = new FormData();
+data.set('data1', 'text data1');
+data.set('data2', 'text data2');
+
+fetch(url,{
+    method: 'POST',
+    cache: 'no-cache',
+    body: data
+}).then((response) => {
+    if (response.ok) {
+        return response.text();
+    }
+    throw new Error();
+}).then((data) => {
+    console.log(data);
+}).catch((error) => {
+    throw new Error();
+});

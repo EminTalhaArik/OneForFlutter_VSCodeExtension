@@ -1,0 +1,20 @@
+import 'dart:io';
+import 'dart:convert';
+
+void main() {
+  String post_data = "no1=001&no2=002";
+  String result="";
+  HttpClient client = new HttpClient();
+  client.postUrl(Uri.parse("https://www.google.com/"))
+    .then((HttpClientRequest request) {
+      request.headers.set(HttpHeaders.CONTENT_TYPE,
+                       'application/x-www-form-urlencoded');
+      request.write(json.encode(post_data));
+      return request.close();
+    })
+    .then((HttpClientResponse response){
+      response.transform(utf8.decoder).listen((contents) {
+        print(contents);
+      });
+    });
+}

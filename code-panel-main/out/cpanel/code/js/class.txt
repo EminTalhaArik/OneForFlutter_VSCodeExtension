@@ -1,0 +1,15 @@
+class Animal {
+    constructor(name, age) {
+        this.name = name;
+        this.age = age;
+    }
+
+    Change(name, age){
+        this.name = name;
+        this.age = age;
+    }
+}
+
+const animal = new Animal('cat', 3);
+
+console.log(animal.name, animal.age);

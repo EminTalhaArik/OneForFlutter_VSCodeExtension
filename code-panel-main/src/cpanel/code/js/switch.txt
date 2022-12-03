@@ -1,0 +1,12 @@
+let w = 'word2';
+switch (w){
+    case 'word1':
+        console.log('word1 match');
+        break;
+    case 'word2':
+        console.log('word2 match');
+        break;
+    default:
+        console.log('word not match');
+        break;
+}

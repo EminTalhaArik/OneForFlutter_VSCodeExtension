@@ -1,0 +1,16 @@
+from curses.ascii import NUL
+
+class Animal:
+    name = NUL
+
+    def __init__(self, name):
+        self.name = name
+
+    def __del__(self):
+        self.name = NUL
+
+    def display(self):
+        print(self.name)
+
+who = Animal('Cat')
+who.display()

@@ -1,0 +1,12 @@
+var w = 'word2';
+switch (w){
+    case 'word1':
+        print('word1 match');
+        break;
+    case 'word2':
+        print('word2 match');
+        break;
+    default:
+        print('word not match');
+        break;
+}

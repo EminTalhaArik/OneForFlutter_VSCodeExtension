@@ -1,0 +1,5 @@
+var mapArray = {'apple': 5, 'banana': 3, 'orange': 8};
+
+mapArray.forEach((name, num){
+    print("${name} is ${num}");
+});

@@ -1,0 +1,8 @@
+$to = 'to@example.com';
+$from = 'from@example.com';
+$subject = 'Hello';
+$message = 'Hi Dear';
+$headers = 'From: from@example.com';
+
+mb_language('Japanese');
+mb_send_mail($to, $subject, $message, $header);

@@ -1,0 +1,8 @@
+try {
+    throw Exception('Exception');
+} on Exception catch(e) {
+    print(e);
+    rethrow;
+} finally {
+    print('finally');
+}

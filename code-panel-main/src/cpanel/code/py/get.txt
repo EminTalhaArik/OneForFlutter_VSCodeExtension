@@ -1,0 +1,6 @@
+import requests
+
+url = 'https://example.com/get.php'
+
+response = requests.get(url)
+print(response.text)

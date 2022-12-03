@@ -1,0 +1,7 @@
+import requests
+
+url = 'http://localhost/test/data.php'
+ary = {'foo': 'bar'}
+
+response = requests.post(url, data=ary)
+print(response.text)

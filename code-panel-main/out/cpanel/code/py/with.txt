@@ -1,0 +1,3 @@
+text = 'text.txt'
+with open(text, "r") as fileread:
+    print(fileread.read())

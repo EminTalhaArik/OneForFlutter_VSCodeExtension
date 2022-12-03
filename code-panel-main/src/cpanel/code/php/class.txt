@@ -1,0 +1,19 @@
+class Animal
+{
+    public $name = NULL;
+
+    function __construct($name) {
+        $this->name = $name;
+    }
+
+    function __destruct() {
+        $this->name = NULL;
+    }
+
+    public function display() {
+        echo $this->name;
+    }
+}
+
+$who = new Animal('Cat');
+$who->display();

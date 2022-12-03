@@ -1,0 +1,12 @@
+$w = 'word2';
+switch ($w){
+    case 'word1':
+        echo $w;
+        break;
+    case 'word2':
+        echo $w;
+        break;
+    default:
+        echo $w;
+        break;
+}

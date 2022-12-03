@@ -1,0 +1,14 @@
+function call() {
+    return new Promise(resolve => {
+        setTimeout(() => {
+            resolve('call async');
+        }, 1000);
+    });
+}
+
+async function asyncCall() {
+    const result = await call();
+    console.log(result);
+}
+
+asyncCall();

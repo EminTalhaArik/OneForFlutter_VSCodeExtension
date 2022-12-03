@@ -1,0 +1,23 @@
+import smtplib
+from email.mime.text import MIMEText
+from email.header  import Header
+
+username = 'account@gmail.com'
+password = 'passward'
+mailFrom = 'account@gmail.com'
+mailTo = 'to@gmail.com'
+
+subject = 'Hello'
+text = 'Hello Dear'
+
+charset = 'iso-2022-jp'
+msg = MIMEText(text, 'plain', charset)
+msg['Subject'] = Header(subject, charset)
+msg['From'] = mailFrom
+msg['To'] = mailTo
+
+server = smtplib.SMTP('smtp.gmail.com', 587)
+server.starttls()
+server.login(username, password)
+server.send_message(msg)
+server.quit()

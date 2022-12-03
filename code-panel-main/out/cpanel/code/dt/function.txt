@@ -1,0 +1,6 @@
+// String or int or double or bool or list
+String strFunct() {
+    const data = 'String';
+
+    return data;
+}

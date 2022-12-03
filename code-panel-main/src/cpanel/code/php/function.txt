@@ -1,0 +1,6 @@
+function func($a = NULL){
+    return $a;
+}
+
+$a = 1;
+echo func($a);

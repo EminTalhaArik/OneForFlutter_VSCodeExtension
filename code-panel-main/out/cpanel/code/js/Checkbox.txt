@@ -1,0 +1,12 @@
+/*
+ bool isChecked = false;
+*/
+Checkbox(
+      checkColor: Colors.white,
+      value: isChecked,
+      onChanged: (bool? value) {
+        setState(() {
+          isChecked = value!;
+        });
+      },
+    ),

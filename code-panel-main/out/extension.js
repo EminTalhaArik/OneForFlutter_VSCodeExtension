@@ -76,19 +76,19 @@ class CodePanelViewProvider {
                 case 'jsFunction':
                     active.edit(editBuilder => {
                         const code = new cpanel.Code(this._extensionUri);
-                        editBuilder.replace(selection, code.js('function'));
+                        editBuilder.replace(selection, code.js('DropDownButton'));
                     });
                     break;
                 case 'jsAsyncFunction':
                     active.edit(editBuilder => {
                         const code = new cpanel.Code(this._extensionUri);
-                        editBuilder.replace(selection, code.js('async_function'));
+                        editBuilder.replace(selection, code.js('Checkboxx'));
                     });
                     break;
                 case 'jsClass':
                     active.edit(editBuilder => {
                         const code = new cpanel.Code(this._extensionUri);
-                        editBuilder.replace(selection, code.js('class'));
+                        editBuilder.replace(selection, code.js('Switch'));
                     });
                     break;
                 case 'jsGet':
@@ -120,7 +120,8 @@ class CodePanelViewProvider {
                         const code = new cpanel.Code(this._extensionUri);
                         editBuilder.replace(selection, code.js('TextField'));
                     });
-                    break;
+                    break;  
+                    
                 // PHP
                 case 'phpIF':
                     active.edit(editBuilder => {
@@ -343,7 +344,7 @@ function getCodePanelBody() {
 			<select class="form-select form-select-sm bg-secondary text-white border-secondary mb-3 changeCodePanel">
 				<option value="">Select Type</option>
 				<option value="js">Widget</option>
-				<option value="php">PHP</option>
+				<option value="php">Layout</option>
 				<option value="py">Python</option>
 			</select>
 		</div>
@@ -389,9 +390,9 @@ function getCodePanelBody() {
                 <div class="row">
                     <div class="col-12 col-xs-12 col-md-12">
                     <a href="#" class="btn btn-secondary btn-sm m-1" role="button" data-act="jsHello"><span class="panel-title">Text Field</span></a>
-                        <a href="#" class="btn btn-secondary btn-sm m-1" role="button" data-act="jsHello"><span class="panel-title">Auto complete</span></a>
-                        <a href="#" class="btn btn-secondary btn-sm m-1" role="button" data-act="jsHello"><span class="panel-title">Form</span></a>
-                        <a href="#" class="btn btn-secondary btn-sm m-1" role="button" data-act="jsHello"><span class="panel-title">Raw Keyboard Listener</span></a>
+                        <a href="#" class="btn btn-secondary btn-sm m-1" role="button" data-act="jsFunction"><span class="panel-title">Drop Down Button</span></a>
+                        <a href="#" class="btn btn-secondary btn-sm m-1" role="button" data-act="jsAsyncFunction"><span class="panel-title">Check Box</span></a>
+                        <a href="#" class="btn btn-secondary btn-sm m-1" role="button" data-act="jsClass"><span class="panel-title">Switch</span></a>
                     </div>
                 </div>
             </div>
@@ -409,14 +410,12 @@ function getCodePanelBody() {
             <div class="panel-body">
                 <div class="row">
                     <div class="col-12 col-xs-12 col-md-12">
-                        <a href="#" class="btn btn-secondary btn-sm m-1" role="button" data-act="phpIF"><span class="panel-title">IF</span></a>
-                        <a href="#" class="btn btn-secondary btn-sm m-1" role="button" data-act="phpSwitch"><span class="panel-title">Switch</span></a>
-                        <a href="#" class="btn btn-secondary btn-sm m-1" role="button" data-act="phpFor"><span class="panel-title">For</span></a>
-                        <a href="#" class="btn btn-secondary btn-sm m-1" role="button" data-act="phpWhile"><span class="panel-title">While</span></a>
-                        <a href="#" class="btn btn-secondary btn-sm m-1" role="button" data-act="phpDoWhile"><span class="panel-title">Do While</span></a>
-                        <a href="#" class="btn btn-secondary btn-sm m-1" role="button" data-act="phpFunction"><span class="panel-title">Function</span></a>
-                        <a href="#" class="btn btn-secondary btn-sm m-1" role="button" data-act="phpClass"><span class="panel-title">Class</span></a>
-                        <a href="#" class="btn btn-secondary btn-sm m-1" role="button" data-act="phpTry"><span class="panel-title">Try Catch</span></a>
+                        <a href="#" class="btn btn-secondary btn-sm m-1" role="button" data-act="phpIF"><span class="panel-title">Column</span></a>
+                        <a href="#" class="btn btn-secondary btn-sm m-1" role="button" data-act="phpSwitch"><span class="panel-title">Center</span></a>
+                        <a href="#" class="btn btn-secondary btn-sm m-1" role="button" data-act="phpFor"><span class="panel-title">Row</span></a>
+                        <a href="#" class="btn btn-secondary btn-sm m-1" role="button" data-act="phpWhile"><span class="panel-title">Padding</span></a>
+                        <a href="#" class="btn btn-secondary btn-sm m-1" role="button" data-act="phpDoWhile"><span class="panel-title">Container</span></a>
+                        <a href="#" class="btn btn-secondary btn-sm m-1" role="button" data-act="phpFunction"><span class="panel-title">Single Child Scroll View</span></a>
                     </div>
                 </div>
             </div>
@@ -511,7 +510,12 @@ function getCodePanelBody() {
                     </div>
                 </div>
             </div>
+            
 		</div>
+        <div class="panel-heading">
+                <h3> Developed by ------ </h3>
+                <h3> 2022 </h3>
+            </div>
     </div>
 	`;
     return htmlBody;

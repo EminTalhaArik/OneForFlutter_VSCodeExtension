@@ -1,0 +1,26 @@
+/*
+Plugin developers,
+ _______________________________________________________________
+|                                                               |
+|---> Ahmet Yunus BAYRAM                                        |
+|                                                               |
+|---> Linkedin;                                                 |
+|---> https://www.linkedin.com/in/ahmet-yunus-bayram-b70785200/ |
+|                                                               |
+|---> Mail;                                                     |
+|---> ahmetyunusbayram@gmail.com                                |
+|                                                               |
+ ---------------------------------------------------------------
+ _______________________________________________________________
+|                                                               |
+|---> Emin Talha ARIK                                           |
+|                                                               |
+|---> Linkedin;                                                 |
+|---> https://www.linkedin.com/in/emin-talha-arik/              |
+|                                                               |
+|---> Mail;                                                     |
+|---> iletisim.emint@gmail.com                                  |
+|                                                               |
+ ---------------------------------------------------------------
+
+*/

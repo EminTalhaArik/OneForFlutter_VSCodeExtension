@@ -112,7 +112,7 @@ class CodePanelViewProvider {
                 case 'jsTry':
                     active.edit(editBuilder => {
                         const code = new cpanel.Code(this._extensionUri);
-                        editBuilder.replace(selection, code.js('try'));
+                        editBuilder.replace(selection, code.js('showDialog'));
                     });
                     break;
                 case 'jsHello':
@@ -126,37 +126,37 @@ class CodePanelViewProvider {
                 case 'phpIF':
                     active.edit(editBuilder => {
                         const code = new cpanel.Code(this._extensionUri);
-                        editBuilder.replace(selection, code.php('if'));
+                        editBuilder.replace(selection, code.php('Column'));
                     });
                     break;
                 case 'phpSwitch':
                     active.edit(editBuilder => {
                         const code = new cpanel.Code(this._extensionUri);
-                        editBuilder.replace(selection, code.php('switch'));
+                        editBuilder.replace(selection, code.php('Center'));
                     });
                     break;
                 case 'phpFor':
                     active.edit(editBuilder => {
                         const code = new cpanel.Code(this._extensionUri);
-                        editBuilder.replace(selection, code.php('for'));
+                        editBuilder.replace(selection, code.php('Row'));
                     });
                     break;
                 case 'phpWhile':
                     active.edit(editBuilder => {
                         const code = new cpanel.Code(this._extensionUri);
-                        editBuilder.replace(selection, code.php('while'));
+                        editBuilder.replace(selection, code.php('Padding'));
                     });
                     break;
                 case 'phpDoWhile':
                     active.edit(editBuilder => {
                         const code = new cpanel.Code(this._extensionUri);
-                        editBuilder.replace(selection, code.php('dowhile'));
+                        editBuilder.replace(selection, code.php('Container'));
                     });
                     break;
                 case 'phpFunction':
                     active.edit(editBuilder => {
                         const code = new cpanel.Code(this._extensionUri);
-                        editBuilder.replace(selection, code.php('function'));
+                        editBuilder.replace(selection, code.php('Scrool'));
                     });
                     break;
                 case 'phpAsyncFunction':
@@ -174,31 +174,31 @@ class CodePanelViewProvider {
                 case 'phpGet':
                     active.edit(editBuilder => {
                         const code = new cpanel.Code(this._extensionUri);
-                        editBuilder.replace(selection, code.php('get'));
+                        editBuilder.replace(selection, code.php('SizedBox'));
                     });
                     break;
                 case 'phpPost':
                     active.edit(editBuilder => {
                         const code = new cpanel.Code(this._extensionUri);
-                        editBuilder.replace(selection, code.php('post'));
+                        editBuilder.replace(selection, code.php('Align'));
                     });
                     break;
                 case 'phpJson':
                     active.edit(editBuilder => {
                         const code = new cpanel.Code(this._extensionUri);
-                        editBuilder.replace(selection, code.php('json'));
+                        editBuilder.replace(selection, code.php('GridView'));
                     });
                     break;
                 case 'phpMail':
                     active.edit(editBuilder => {
                         const code = new cpanel.Code(this._extensionUri);
-                        editBuilder.replace(selection, code.php('mail'));
+                        editBuilder.replace(selection, code.php('ListView'));
                     });
                     break;
                 case 'phpTry':
                     active.edit(editBuilder => {
                         const code = new cpanel.Code(this._extensionUri);
-                        editBuilder.replace(selection, code.php('try'));
+                        editBuilder.replace(selection, code.php('Stack'));
                     });
                     break;
                 case 'phpHello':
@@ -217,13 +217,13 @@ class CodePanelViewProvider {
                 case 'pyWith':
                     active.edit(editBuilder => {
                         const code = new cpanel.Code(this._extensionUri);
-                        editBuilder.replace(selection, code.py('with'));
+                        editBuilder.replace(selection, code.py('For'));
                     });
                     break;
                 case 'pyDictionary':
                     active.edit(editBuilder => {
                         const code = new cpanel.Code(this._extensionUri);
-                        editBuilder.replace(selection, code.py('dictionary'));
+                        editBuilder.replace(selection, code.py('ForIn'));
                     });
                     break;
                 case 'pyFor':
@@ -235,19 +235,19 @@ class CodePanelViewProvider {
                 case 'pyWhile':
                     active.edit(editBuilder => {
                         const code = new cpanel.Code(this._extensionUri);
-                        editBuilder.replace(selection, code.py('while'));
+                        editBuilder.replace(selection, code.py('While'));
                     });
                     break;
                 case 'pyDef':
                     active.edit(editBuilder => {
                         const code = new cpanel.Code(this._extensionUri);
-                        editBuilder.replace(selection, code.py('def'));
+                        editBuilder.replace(selection, code.py('Function'));
                     });
                     break;
                 case 'pyClass':
                     active.edit(editBuilder => {
                         const code = new cpanel.Code(this._extensionUri);
-                        editBuilder.replace(selection, code.py('class'));
+                        editBuilder.replace(selection, code.py('Class'));
                     });
                     break;
                 case 'pyGet':
@@ -271,13 +271,13 @@ class CodePanelViewProvider {
                 case 'pyTry':
                     active.edit(editBuilder => {
                         const code = new cpanel.Code(this._extensionUri);
-                        editBuilder.replace(selection, code.py('try'));
+                        editBuilder.replace(selection, code.py('Try'));
                     });
                     break;
                 case 'pyHello':
                     active.edit(editBuilder => {
                         const code = new cpanel.Code(this._extensionUri);
-                        editBuilder.replace(selection, code.py('hello'));
+                        editBuilder.replace(selection, code.py('Developers'));
                     });
                     break;
                 // showPanel
@@ -345,7 +345,7 @@ function getCodePanelBody() {
 				<option value="">Select Type</option>
 				<option value="js">Widget</option>
 				<option value="php">Layout</option>
-				<option value="py">Python</option>
+				<option value="py">Dart</option>
 			</select>
 		</div>
 
@@ -396,6 +396,17 @@ function getCodePanelBody() {
                     </div>
                 </div>
             </div>
+            <div class="panel-heading">
+            <h3>Flutter Other Widgets</h3>
+        </div>
+        <div class="panel-body">
+            <div class="row">
+                <div class="col-12 col-xs-12 col-md-12">
+               
+                    <a href="#" class="btn btn-secondary btn-sm m-1" role="button" data-act="jsTry"><span class="panel-title">Alert Dialog</span></a>   
+                </div>
+            </div>
+        </div>
 		</div>
 
 		<!--
@@ -405,7 +416,7 @@ function getCodePanelBody() {
 		-->
         <div class="panel panel-primary panel-php">
             <div class="panel-heading">
-                <h3>Usual</h3>
+                <h3>Flutter Layout Type</h3>
             </div>
             <div class="panel-body">
                 <div class="row">
@@ -416,34 +427,19 @@ function getCodePanelBody() {
                         <a href="#" class="btn btn-secondary btn-sm m-1" role="button" data-act="phpWhile"><span class="panel-title">Padding</span></a>
                         <a href="#" class="btn btn-secondary btn-sm m-1" role="button" data-act="phpDoWhile"><span class="panel-title">Container</span></a>
                         <a href="#" class="btn btn-secondary btn-sm m-1" role="button" data-act="phpFunction"><span class="panel-title">Single Child Scroll View</span></a>
+
+                        <a href="#" class="btn btn-secondary btn-sm m-1" role="button" data-act="phpGet"><span class="panel-title">Sized Box</span></a>
+                        <a href="#" class="btn btn-secondary btn-sm m-1" role="button" data-act="phpPost"><span class="panel-title">Align</span></a>
+                        <a href="#" class="btn btn-secondary btn-sm m-1" role="button" data-act="phpJson"><span class="panel-title">Grid View</span></a>
+                        <a href="#" class="btn btn-secondary btn-sm m-1" role="button" data-act="phpMail"><span class="panel-title">List View</span></a>
+                        <a href="#" class="btn btn-secondary btn-sm m-1" role="button" data-act="phpTry"><span class="panel-title">Stack</span></a>
+
                     </div>
                 </div>
             </div>
 
-            <div class="panel-heading">
-                <h3>Net</h3>
-            </div>
-            <div class="panel-body">
-                <div class="row">
-                    <div class="col-12 col-xs-12 col-md-12">
-                        <a href="#" class="btn btn-secondary btn-sm m-1" role="button" data-act="phpGet"><span class="panel-title">GET</span></a>
-                        <a href="#" class="btn btn-secondary btn-sm m-1" role="button" data-act="phpPost"><span class="panel-title">POST</span></a>
-                        <a href="#" class="btn btn-secondary btn-sm m-1" role="button" data-act="phpJson"><span class="panel-title">JSON</span></a>
-                        <a href="#" class="btn btn-secondary btn-sm m-1" role="button" data-act="phpMail"><span class="panel-title">Mail</span></a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="panel-heading">
-                <h3>ETC</h3>
-            </div>
-            <div class="panel-body">
-                <div class="row">
-                    <div class="col-12 col-xs-12 col-md-12">
-                        <a href="#" class="btn btn-secondary btn-sm m-1" role="button" data-act="phpHello"><span class="panel-title">Hello</span></a>
-                    </div>
-                </div>
-            </div>
+         
+           
 
 <!--
             <div class="panel-heading">
@@ -475,46 +471,24 @@ function getCodePanelBody() {
             <div class="panel-body">
                 <div class="row">
                     <div class="col-12 col-xs-12 col-md-12">
-                        <a href="#" class="btn btn-secondary btn-sm m-1" role="button" data-act="pyIF"><span class="panel-title">IF</span></a>
-                        <a href="#" class="btn btn-secondary btn-sm m-1" role="button" data-act="pyWith"><span class="panel-title">Dictionary</span></a>
-                        <a href="#" class="btn btn-secondary btn-sm m-1" role="button" data-act="pyDictionary"><span class="panel-title">With</span></a>
-                        <a href="#" class="btn btn-secondary btn-sm m-1" role="button" data-act="pyFor"><span class="panel-title">For</span></a>
+                        <a href="#" class="btn btn-secondary btn-sm m-1" role="button" data-act="pyIF"><span class="panel-title">If</span></a>
+                        <a href="#" class="btn btn-secondary btn-sm m-1" role="button" data-act="pyWith"><span class="panel-title">For</span></a>
+                        <a href="#" class="btn btn-secondary btn-sm m-1" role="button" data-act="pyDictionary"><span class="panel-title">For In</span></a>
                         <a href="#" class="btn btn-secondary btn-sm m-1" role="button" data-act="pyWhile"><span class="panel-title">While</span></a>
-                        <a href="#" class="btn btn-secondary btn-sm m-1" role="button" data-act="pyDef"><span class="panel-title">Def</span></a>
+                        <a href="#" class="btn btn-secondary btn-sm m-1" role="button" data-act="pyDef"><span class="panel-title">Function</span></a>
                         <a href="#" class="btn btn-secondary btn-sm m-1" role="button" data-act="pyClass"><span class="panel-title">Class</span></a>
                         <a href="#" class="btn btn-secondary btn-sm m-1" role="button" data-act="pyTry"><span class="panel-title">Try Catch</span></a>
+
                     </div>
                 </div>
             </div>
 
-            <div class="panel-heading">
-                <h3>Net</h3>
-            </div>
-            <div class="panel-body">
-                <div class="row">
-                    <div class="col-12 col-xs-12 col-md-12">
-                        <a href="#" class="btn btn-secondary btn-sm m-1" role="button" data-act="pyGet"><span class="panel-title">GET</span></a>
-                        <a href="#" class="btn btn-secondary btn-sm m-1" role="button" data-act="pyPost"><span class="panel-title">POST</span></a>
-                        <a href="#" class="btn btn-secondary btn-sm m-1" role="button" data-act="pyJson"><span class="panel-title">JSON</span></a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="panel-heading">
-                <h3>ETC</h3>
-            </div>
-            <div class="panel-body">
-                <div class="row">
-                    <div class="col-12 col-xs-12 col-md-12">
-                        <a href="#" class="btn btn-secondary btn-sm m-1" role="button" data-act="pyHello"><span class="panel-title">Hello</span></a>
-                    </div>
-                </div>
-            </div>
             
-		</div>
+            
+		</div &nbsp;>
         <div class="panel-heading">
-                <h3> Developed by ------ </h3>
-                <h3> 2022 </h3>
+        <a href="#" class="btn btn-secondary btn-sm m-1" role="button" data-act="pyHello"><span class="panel-title">Developer information</span></a>
+                <h3>One For Flutter 2022</h3>
             </div>
     </div>
 	`;

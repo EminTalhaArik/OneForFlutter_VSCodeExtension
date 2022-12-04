@@ -1,9 +1,0 @@
-try {
-    console.log('success');
-}
-catch (error) {
-    console.log(error);
-}
-finally {
-    console.log('finally');
-}

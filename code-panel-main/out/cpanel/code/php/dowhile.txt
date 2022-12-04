@@ -1,9 +1,0 @@
-$n = NULL;
-$i = 0;
-
-do {
-	$i = $i + 1; 
-	$n = $n + $i;
-} while ($i < 5);
-
-echo $n;

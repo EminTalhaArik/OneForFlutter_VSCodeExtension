@@ -1,11 +1,5 @@
-a = 1
-b = 2 # or 0
-
-try:
-    print(a / b)
-except ZeroDivisionError as e:
-    print(e)
-else:
-    print('success')
-finally:
-    print('finally')
+try {
+    
+  } catch (e) {
+    
+  }
